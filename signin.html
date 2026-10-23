@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChaloChale - Sign In</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light min-vh-100 d-flex flex-column">
+
+    <div class="main-container flex-grow-1 d-flex flex-column">
+
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+
+            <a class="navbar-brand text-primary fw-bold" href="index.html">
+                ChaloChale
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destinations">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#packages">
+                            Packages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#booking">
+                            Booking
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- SIGN UP / SIGN IN BUTTONS -->
+                <div class="d-flex flex-column flex-lg-row gap-2 mb-2 mb-lg-0">
+
+                    <a class="btn btn-warning" href="signup.html">
+                        Sign Up
+                    </a>
+
+                    <a class="btn btn-outline-light active"
+                        href="signin.html"
+                        aria-current="page">
+                        Sign In
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- NAVBAR END -->
+
+
+        <!-- SIGN IN FORM START -->
+        <section class="container flex-grow-1 d-flex align-items-center py-5">
+
+            <div class="row w-100 justify-content-center">
+
+                <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+
+                    <div class="card shadow border-0 rounded-4">
+
+                        <div class="card-body p-4 p-md-5">
+
+                            <!-- FORM HEADING -->
+                            <div class="text-center mb-4">
+
+                                <h2 class="fw-bold text-primary">
+                                    Welcome Back !!!
+                                </h2>
+
+                                <p class="text-secondary mb-0">
+                                    Sign in to continue your journey.
+                                </p>
+
+                            </div>
+
+                            <form action="#" method="post">
+
+                                <!-- EMAIL -->
+                                <div class="mb-3">
+
+                                    <label for="email"
+                                        class="form-label fw-semibold">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control form-control-lg"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Enter your email"
+                                        autocomplete="email"
+                                        required>
+
+                                </div>
+
+                                <!-- PASSWORD -->
+                                <div class="mb-3">
+
+                                    <label for="password"
+                                        class="form-label fw-semibold">
+                                        Password
+                                    </label>
+
+                                    <input type="password"
+                                        class="form-control form-control-lg"
+                                        id="password"
+                                        name="password"
+                                        placeholder="Enter your password"
+                                        autocomplete="current-password"
+                                        required>
+
+                                </div>
+
+                                <!-- REMEMBER ME / FORGOT PASSWORD -->
+                                <div class="d-flex justify-content-between
+                                    align-items-center flex-wrap gap-2 mb-4">
+
+                                    <div class="form-check">
+
+                                        <input type="checkbox"
+                                            class="form-check-input"
+                                            id="rememberMe"
+                                            name="rememberMe">
+
+                                        <label class="form-check-label"
+                                            for="rememberMe">
+                                            Remember Me
+                                        </label>
+
+                                    </div>
+
+                                    <a href="forgot-password.html"
+                                        class="text-primary text-decoration-none small">
+                                        Forgot Password?
+                                    </a>
+
+                                </div>
+
+                                <!-- SIGN IN BUTTON -->
+                                <div class="d-grid">
+
+                                    <button type="submit"
+                                        class="btn btn-primary btn-lg">
+                                        Sign In
+                                    </button>
+
+                                </div>
+
+                                <!-- SIGN UP LINK -->
+                                <p class="text-center mt-4 mb-0">
+
+                                    Don't have an account?
+
+                                    <a href="signup.html"
+                                        class="text-primary text-decoration-none fw-semibold">
+                                        Sign Up
+                                    </a>
+
+                                </p>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- SIGN IN FORM END -->
+
+
+        <!-- FOOTER START -->
+        <footer class="text-center border-top py-4 mt-auto bg-dark text-white"
+            id="contact">
+
+            <h5 class="fw-bold">ChaloChale</h5>
+
+            <p class="mb-2 text-light">
+                Explore More, Travel More, Create Memories!
+            </p>
+
+            <p class="mb-2">
+
+                <a href="index.html"
+                    class="text-white text-decoration-none mx-2">
+                    Home
+                </a>
+
+                <a href="index.html#destinations"
+                    class="text-white text-decoration-none mx-2">
+                    Destinations
+                </a>
+
+                <a href="index.html#packages"
+                    class="text-white text-decoration-none mx-2">
+                    Packages
+                </a>
+
+                <a href="#contact"
+                    class="text-white text-decoration-none mx-2">
+                    Contact
+                </a>
+
+            </p>
+
+            <p class="mb-2">
+
+                <a href="mailto:contact@chalochale.com"
+                    class="text-info text-decoration-none">
+                    contact@chalochale.com
+                </a>
+
+            </p>
+
+            <p class="text-white-50 small mb-0">
+                &copy; 2026 ChaloChale Travel App |
+                Designed With Bootstrap. All Rights Reserved.
+            </p>
+
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

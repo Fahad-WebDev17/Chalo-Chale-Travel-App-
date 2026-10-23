@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaloChale - Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light min-vh-100 d-flex flex-column">
+
+    <div class="main-container flex-grow-1 d-flex flex-column">
+
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+
+            <a class="navbar-brand text-primary fw-bold" href="index.html">
+                ChaloChale
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destinations">
+                            Destinations
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#packages">
+                            Packages
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Booking.html"
+                            aria-current="page">
+                            Booking
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex flex-column flex-lg-row gap-2 mb-2 mb-lg-0">
+                    <a class="btn btn-warning" href="signup.html">
+                        Sign Up
+                    </a>
+                    <a class="btn btn-outline-light" href="signin.html">
+                        Sign In
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <main class="flex-grow-1">
+            <section class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9 col-xl-8">
+                        <div class="card border-0 shadow rounded-4">
+                            <div class="card-body p-4 p-md-5">
+                                <h1 class="text-center fw-bold mb-2">
+                                    Book Your Trip
+                                </h1>
+                                <p class="text-center text-secondary mb-4">
+                                    Share Your Travel Details To Send A Booking Request.
+                                </p>
+
+                                <form class="row g-3" id="bookingForm">
+                                    <div class="col-md-6">
+                                        <label for="fullname" class="form-label">
+                                            Full Name
+                                        </label>
+                                        <input type="text"
+                                            class="form-control"
+                                            id="fullname"
+                                            name="fullname"
+                                            placeholder="Enter your full name"
+                                            autocomplete="name"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">
+                                            Email
+                                        </label>
+                                        <input type="email"
+                                            class="form-control"
+                                            id="inputEmail4"
+                                            name="email"
+                                            placeholder="Enter your email"
+                                            autocomplete="email"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">
+                                            Password
+                                        </label>
+                                        <input type="password"
+                                            class="form-control"
+                                            id="inputPassword4"
+                                            name="password"
+                                            minlength="8"
+                                            autocomplete="new-password"
+                                            placeholder="Minimum 8 characters"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="travelDate" class="form-label">
+                                            Travel Date
+                                        </label>
+                                        <input type="date"
+                                            class="form-control"
+                                            id="travelDate"
+                                            name="travelDate"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="numberOfPeople" class="form-label">
+                                            Number Of People
+                                        </label>
+                                        <input type="number"
+                                            class="form-control"
+                                            id="numberOfPeople"
+                                            name="numberOfPeople"
+                                            min="1"
+                                            max="100"
+                                            value="1"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">
+                                            City
+                                        </label>
+                                        <input type="text"
+                                            class="form-control"
+                                            id="inputCity"
+                                            name="city"
+                                            placeholder="Enter your city"
+                                            autocomplete="address-level2"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <label for="inputState" class="form-label">
+                                            State
+                                        </label>
+                                        <select id="inputState"
+                                            class="form-select"
+                                            name="state"
+                                            required>
+                                            <option value="" selected disabled>
+                                                Choose your state...
+                                            </option>
+                                            <option>Maharashtra</option>
+                                            <option>Goa</option>
+                                            <option>Gujarat</option>
+                                            <option>Karnataka</option>
+                                            <option>Delhi</option>
+                                            <option>Jammu and Kashmir</option>
+                                            <option>Uttarakhand</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="inputZip" class="form-label">
+                                            PIN Code
+                                        </label>
+                                        <input type="text"
+                                            class="form-control"
+                                            id="inputZip"
+                                            name="zip"
+                                            inputmode="numeric"
+                                            pattern="[0-9]{6}"
+                                            maxlength="6"
+                                            placeholder="6 digits"
+                                            required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox"
+                                                id="gridCheck"
+                                                name="confirmDetails"
+                                                class="form-check-input"
+                                                required>
+                                            <label for="gridCheck"
+                                                class="form-check-label">
+                                                I confirm that the details are correct.
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 d-flex flex-column flex-sm-row gap-2">
+                                        <button type="submit" class="btn btn-success">
+                                            Submit Booking Request
+                                        </button>
+                                        <button type="reset" class="btn btn-secondary">
+                                            Clear Form
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER START -->
+        <footer class="text-center border-top py-4 mt-auto bg-dark text-white"
+            id="contact">
+
+            <h5 class="fw-bold">ChaloChale</h5>
+
+            <p class="mb-2 text-light">
+                Explore More, Travel More, Create Memories!
+            </p>
+
+            <p class="mb-2">
+                <a href="index.html"
+                    class="text-white text-decoration-none mx-2">
+                    Home
+                </a>
+                <a href="index.html#destinations"
+                    class="text-white text-decoration-none mx-2">
+                    Destinations
+                </a>
+                <a href="index.html#packages"
+                    class="text-white text-decoration-none mx-2">
+                    Packages
+                </a>
+                <a href="#contact"
+                    class="text-white text-decoration-none mx-2">
+                    Contact
+                </a>
+            </p>
+
+            <p class="mb-2">
+                <a href="mailto:contact@chalochale.com"
+                    class="text-info text-decoration-none">
+                    contact@chalochale.com
+                </a>
+            </p>
+
+            <p class="text-white-50 small mb-0">
+                &copy; 2026 ChaloChale Travel App |
+                Designed With Bootstrap. All Rights Reserved.
+            </p>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>

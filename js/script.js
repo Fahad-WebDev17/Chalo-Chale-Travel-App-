@@ -1,35 +1,43 @@
 
-// Select elements
-const openDialog = document.getElementById("openDialog");
-const slideDownDialog = document.getElementById("slideDownDialog");
-const closeIcon = document.getElementById("closeIcon");
-const closeDialog = document.getElementById("closeDialog");
-const saveChanges = document.getElementById("saveChanges");
+// Select the booking modal
+const bookingModalElement = document.getElementById("bookingModal");
 
-// Open dialog
-openDialog.addEventListener("click", function () {
-    slideDownDialog.showModal();
+// Create a Bootstrap modal instance
+const bookingModal = new bootstrap.Modal(bookingModalElement);
+
+// Select all booking buttons
+const bookingButtons = document.querySelectorAll(".open-booking");
+
+// Open the modal when any booking button is clicked
+bookingButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        bookingModal.show();
+    });
 });
 
-// Close using the X button
-closeIcon.addEventListener("click", function () {
-    slideDownDialog.close();
-});
+// Set the minimum travel date to today
+const travelDate = document.getElementById("travelDate");
 
-// Close using the Close button
-closeDialog.addEventListener("click", function () {
-    slideDownDialog.close();
-});
+const today = new Date();
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, "0");
+const day = String(today.getDate()).padStart(2, "0");
 
-// Save changes
-saveChanges.addEventListener("click", function () {
-    alert("Your trip details have been saved!");
-    slideDownDialog.close();
-});
+travelDate.min = `${year}-${month}-${day}`;
 
-// Close when clicking outside the dialog
-slideDownDialog.addEventListener("click", function (event) {
-    if (event.target === slideDownDialog) {
-        slideDownDialog.close();
+// Handle booking form submission
+const bookingForm = document.getElementById("bookingForm");
+
+bookingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (!bookingForm.checkValidity()) {
+        bookingForm.reportValidity();
+        return;
     }
+
+    alert("Your booking request has been submitted successfully!");
+
+    bookingForm.reset();
+    bookingModal.hide();
 });
