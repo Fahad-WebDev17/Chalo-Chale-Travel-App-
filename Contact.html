@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaloChale - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light min-vh-100 d-flex flex-column">
+
+    <div class="main-container flex-grow-1 d-flex flex-column">
+
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+            <a class="navbar-brand text-primary fw-bold" href="index.html">
+                ChaloChale
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destinations">
+                            Destinations
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#packages">
+                            Packages
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contactForm"
+                            aria-current="page">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="d-flex gap-2 mb-2 mb-lg-0">
+                    <a class="btn btn-warning" href="signup.html">Sign Up</a>
+                    <a class="btn btn-warning" href="signin.html">Sign In</a>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <main class="flex-grow-1">
+            <section class="container py-5" id="contactForm">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9 col-xl-8">
+                        <div class="card border-0 shadow rounded-4">
+                            <div class="card-body p-4 p-md-5">
+                                <h1 class="text-center fw-bold mb-2">
+                                    Contact Us
+                                </h1>
+                                <p class="text-center text-secondary mb-4">
+                                    Have a question or need help planning your trip?
+                                    Send us a message.
+                                </p>
+
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label">
+                                            Full Name
+                                        </label>
+                                        <input type="text"
+                                            class="form-control"
+                                            id="fullName"
+                                            name="name"
+                                            placeholder="Enter your full name"
+                                            autocomplete="name"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">
+                                            Email Address
+                                        </label>
+                                        <input type="email"
+                                            class="form-control"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Enter your email"
+                                            autocomplete="email"
+                                            required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">
+                                            Subject
+                                        </label>
+                                        <input type="text"
+                                            class="form-control"
+                                            id="subject"
+                                            name="subject"
+                                            placeholder="How can we help?"
+                                            required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">
+                                            Message
+                                        </label>
+                                        <textarea class="form-control"
+                                            id="message"
+                                            name="message"
+                                            rows="5"
+                                            placeholder="Write your message here..."
+                                            required></textarea>
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <button type="submit"
+                                            class="btn btn-success px-4">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER START -->
+        <footer class="text-center border-top py-4 mt-5 bg-dark text-white"
+            id="contact">
+
+            <h5 class="fw-bold">ChaloChale</h5>
+
+            <p class="mb-2 text-light">
+                Explore More, Travel More, Create Memories!
+            </p>
+
+            <p class="mb-2">
+                <a href="index.html" class="text-white text-decoration-none mx-2">Home</a>
+                <a href="index.html#destinations"
+                    class="text-white text-decoration-none mx-2">Destinations</a>
+                <a href="index.html#packages"
+                    class="text-white text-decoration-none mx-2">Packages</a>
+                <a href="#contactForm"
+                    class="text-white text-decoration-none mx-2">Contact</a>
+            </p>
+
+            <p class="mb-2">
+                <a href="mailto:contact@chalochale.com"
+                    class="text-info text-decoration-none">
+                    contact@chalochale.com
+                </a>
+            </p>
+
+            <p class="text-white-50 small mb-0">
+                &copy; 2026 ChaloChale Travel App |
+                Designed With Bootstrap. All Rights Reserved.
+            </p>
+
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
